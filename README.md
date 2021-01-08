@@ -17,7 +17,7 @@ The data contains such attributes as patient number, race, gender, age, admissio
 Given a class imbalance of approximately 90%-to-10% between target variables, undersampling was performed and models were conducted on a dataset of 22,714 hospital encounters. Four classification models were performed to determine best fit: a decision tree, random forest, and XGBoost. Accuracy, precision, recall, and F1 scores were analyzed to determine the best-fit model, with an emphasis on accuracy and recall in an effort to minimize false predictions of no readmittance.
 
 # Results
-Of the four models, the XGBoost model most accurately predicted readmission, as determined via accuracy and recall. Below are confusion matrices for each model, which evidence this. Its test scoring metrics are as follows:
+Of the three models, the XGBoost model most accurately predicted readmission, as determined via accuracy and recall. Below are confusion matrices for each model, which evidence this. Its test scoring metrics are as follows:
 1. Accuracy: 61.90%
 2. Recall: 60.16%
 3. Precision: 62.71%
