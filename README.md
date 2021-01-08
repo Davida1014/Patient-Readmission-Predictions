@@ -12,28 +12,28 @@ This dataset represents 101,000 hospital encounters of approximately 71,000 indi
 4. Laboratory tests were performed during the encounter.
 5. Medications were administered during the encounter.
 
-The data contains such attributes as patient number, race, gender, age, admission type, time in hospital, medical specialty of admitting physician, number of lab test performed, HbA1c test result, diagnosis, number of medication, diabetic medications, number of outpatient, inpatient, and emergency visits in the year before the hospitalization, etc.
+The data contains such attributes as patient number, race, gender, age, admission type, time in hospital, medical specialty of admitting physician, number of lab test performed, HbA1c test result, diagnosis, number of medication, diabetic medications, number of outpatient, inpatient, and emergency visits in the year before the hospitalization, etc. 
 
-Given a class imbalance of approximately 90%-to-10% between target variables, undersampling was performed and models were conducted on a dataset of 22,714 hospital encounters. Four classification models were performed to determine best fit: a decision tree, random forest, XG boost, and logistic regression. Accuracy, precision, recall, and F1 scores were analyzed to determine the best-fit model, with an emphasis on accuracy and recall in an effort to minimize false predictions of no readmittance.
+Given a class imbalance of approximately 90%-to-10% between target variables, undersampling was performed and models were conducted on a dataset of 22,714 hospital encounters. Four classification models were performed to determine best fit: a decision tree, random forest, XGBoost, and logistic regression. Accuracy, precision, recall, and F1 scores were analyzed to determine the best-fit model, with an emphasis on accuracy and recall in an effort to minimize false predictions of no readmittance.
 
 # Results
-Of the four models, the XXX model most accurately predicted readmission. Below are confusion matrices for each model, which evidence this. Its scoring metrics are as follows:
-Accuracy:
-Precision:
-Recall:
-F1:
+Of the four models, the XGBoost model most accurately predicted readmission, as determined via accuracy and recall. Below are confusion matrices for each model, which evidence this. Its test scoring metrics are as follows:
+Accuracy: 61.90%
+Recall: 60.16%
+Precision: 62.71%
+F1: 61.4%
 
 [INSERT ALL MODEL CONFUSION MATRICES]
 
-Of the features included in this most successful model, XXX, XXX, XXX, and XXX held the most predictive power. This is outlined in the graph below, which measures feature importance.
+Of the features included in this most successful model, number_inpatient, discharge_disposition_id, and total_hosp_visits held the most predictive power. This is outlined in the graph below, which measures feature importance.
 
 [INSERT FEATURE IMPORTANCE GRAPH FOR BEST-FIT MODEL]
 
 # Recommendations, Next Steps
-Based on these findings, we recommend insurance companies look to diabetes patients' XXX, XXX, XXX, and XXX to predict likelihood of hospital readmission within 30 days. Opportunites for further work include:
+Based on these findings, we recommend insurance companies look to diabetes patients' number of inpatient admissions over the previous year, discharge disposition id, and total number of hospital visits in the preivous year to predict likelihood of hospital readmission within 30 days. Opportunites for further work include:
 1. Creating a multi-class classification model to predict likelihood of hospital readmission at different intervals above 30 days.
 2. Incorporating patient weight data, which was omitted here due to lack of data.
 3. Conducing more recent research as modern medical innovation and technology may yield different results.
 
 # Summary
-A XXX model successfully predicted hospital readmission for diabetes patients with XX% accuracy for 22,714 hospital encounters recorded over 10 years. Of the features used to build this model, XXX, XXX, XXX, and XXX held the most predictive power. We recommend insurance companies look to these features when predicting likelihood of readmission for diabetes patients.
+An XGBoost model successfully predicted hospital readmission for diabetes patients with 61.90% accuracy and 60.16& recall for 22,714 hospital encounters recorded over 10 years. Of the features used to build this model, number of inpatient admissions over the previous year, discharge disposition id, and total number of hospital visits in the previous year held the most predictive power. We recommend insurance companies look to these features when predicting likelihood of readmission for diabetes patients.
