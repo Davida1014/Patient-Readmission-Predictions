@@ -24,16 +24,26 @@ Three classification models were performed to determine best fit: a decision tre
 
 # Results
 Of the three models, the XGBoost model most accurately predicted readmission, as determined via accuracy and recall. Below are confusion matrices for each model, which evidence this. Its test scoring metrics are as follows:
-1. Accuracy: 61.90%
-2. Recall: 60.16%
-3. Precision: 62.71%
-4. F1: 61.4%
+1. Accuracy: 62.36%
+2. Recall: 62.12%
+3. Precision: 62.78%
+4. F1: 62.45%
 
-[INSERT ALL MODEL CONFUSION MATRICES]
+Below are confusion matrices from each of the three models. As shown, the random forest and XGBoost models were significantly more accurate than the decision tree model. The XGBoost model was slighly more accurate than the random forest.
 
-Of the features included in this most successful model, number_inpatient, discharge_disposition_id, and total_hosp_visits held the most predictive power. This is outlined in the graph below, which measures feature importance.
+Decision Tree:
+![dt_confusion](https://github.com/Davida1014/Patient-Readmission-Predictions/blob/master/Images/dt_confusion.png?raw=true)
 
-[INSERT FEATURE IMPORTANCE GRAPH FOR BEST-FIT MODEL]
+Random Forest:
+![rf_confusion](https://github.com/Davida1014/Patient-Readmission-Predictions/blob/master/Images/rf_confusion.png?raw=true)
+
+XGBoost:
+![xgb_confusion](https://github.com/Davida1014/Patient-Readmission-Predictions/blob/master/Images/xgb_confusion.png?raw=true)
+
+
+Of the features included in this most successful model, number_inpatient, discharge_disposition_id, total_hosp_visits, and time_in_hospital held the most predictive power. This is outlined in the graph below, which measures feature importance.
+
+![xgb_features](https://github.com/Davida1014/Patient-Readmission-Predictions/blob/master/Images/xgb_features.png?raw=true)
 
 # Recommendations, Next Steps
 Based on these findings, we recommend insurance companies look to diabetes patients' number of inpatient admissions over the previous year, discharge disposition id, and total number of hospital visits in the previous year to predict likelihood of hospital readmission within 30 days. Opportunites for further work include:
@@ -43,7 +53,7 @@ Based on these findings, we recommend insurance companies look to diabetes patie
 4. Using neural networks to improve model accuracy and recall.
 
 # Summary
-An XGBoost model successfully predicted hospital readmission for diabetes patients with 61.90% accuracy and 60.16% recall for 22,714 hospital encounters recorded over 10 years. Of the features used to build this model, number of inpatient admissions over the previous year, discharge disposition id, and total number of hospital visits in the previous year held the most predictive power. We recommend insurance companies, hospitals, and medical professionals look to these features when predicting likelihood of readmission for diabetes patients.
+An XGBoost model successfully predicted hospital readmission for diabetes patients with 62.36% accuracy and 62.12% recall for 22,714 hospital encounters recorded over 10 years. Of the features used to build this model, number of inpatient admissions over the previous year, discharge disposition id, and total number of hospital visits in the previous year held the most predictive power. We recommend insurance companies, hospitals, and medical professionals look to these features when predicting likelihood of readmission for diabetes patients.
 
-# Acknowledgment
-This data was accessed via the UC Irivine Machine Learning Repository via the following link: https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008 
+# Source
+This data was accessed via the UC Irivine Machine Learning Repository via the following link: https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008
