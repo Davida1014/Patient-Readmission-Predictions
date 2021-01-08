@@ -16,7 +16,7 @@ This dataset represents 101,000 hospital encounters of approximately 71,000 indi
 
 The data contains such attributes as patient number, race, gender, age, admission type, time in hospital, medical specialty of admitting physician, number of lab test performed, HbA1c test result, diagnosis, number of medication, diabetic medications, number of outpatient, inpatient, and emergency visits in the year before the hospitalization, etc. 
 
-Dataset suffers from lack of class separation, presenting a challenge for generating predictions.
+The dataset suffers from lack of class separation, presenting a challenge for generating predictions.
 
 Given a class imbalance of approximately 90%-to-10% between target variables, undersampling was performed and models were conducted on a dataset of 22,714 hospital encounters.
 
