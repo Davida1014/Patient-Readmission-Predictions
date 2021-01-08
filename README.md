@@ -34,10 +34,10 @@ Based on these findings, we recommend insurance companies look to diabetes patie
 1. Creating a multi-class classification model to predict likelihood of hospital readmission at different intervals above 30 days.
 2. Incorporating patient weight data, which was omitted here due to lack of data.
 3. Conducting more recent research as modern medical innovation and technology may yield different results.
-4. Using neural networks to imporve model accuracy and recall.
+4. Using neural networks to improve model accuracy and recall.
 
 # Summary
-An XGBoost model successfully predicted hospital readmission for diabetes patients with 61.90% accuracy and 60.16& recall for 22,714 hospital encounters recorded over 10 years. Of the features used to build this model, number of inpatient admissions over the previous year, discharge disposition id, and total number of hospital visits in the previous year held the most predictive power. We recommend insurance companies look to these features when predicting likelihood of readmission for diabetes patients.
+An XGBoost model successfully predicted hospital readmission for diabetes patients with 61.90% accuracy and 60.16% recall for 22,714 hospital encounters recorded over 10 years. Of the features used to build this model, number of inpatient admissions over the previous year, discharge disposition id, and total number of hospital visits in the previous year held the most predictive power. We recommend insurance companies look to these features when predicting likelihood of readmission for diabetes patients.
 
 # Acknowledgment
 This data was accessed via the UC Irivine Machine Learning Repository via the following link: https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008 
