@@ -30,7 +30,7 @@ Of the features included in this most successful model, number_inpatient, discha
 [INSERT FEATURE IMPORTANCE GRAPH FOR BEST-FIT MODEL]
 
 # Recommendations, Next Steps
-Based on these findings, we recommend insurance companies look to diabetes patients' number of inpatient admissions over the previous year, discharge disposition id, and total number of hospital visits in the preivous year to predict likelihood of hospital readmission within 30 days. Opportunites for further work include:
+Based on these findings, we recommend insurance companies look to diabetes patients' number of inpatient admissions over the previous year, discharge disposition id, and total number of hospital visits in the previous year to predict likelihood of hospital readmission within 30 days. Opportunites for further work include:
 1. Creating a multi-class classification model to predict likelihood of hospital readmission at different intervals above 30 days.
 2. Incorporating patient weight data, which was omitted here due to lack of data.
 3. Conducing more recent research as modern medical innovation and technology may yield different results.
