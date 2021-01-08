@@ -4,7 +4,7 @@
 # Overview, Business Problem
 This project seeks to create a model that classifies whether a diabetes patient in a given hospital encounter is likely to be readmitted to the hospital within 30 days of discharge. This information will help insurance companies determine individual patients' risk of returning in the hospital in this time period.
 
-# Data and Methods
+# Data, Methods
 This dataset represents 101,000 hospital encounters of approximately 71,000 individual patients, across 130 US hospitals, and recorded over the 10-year period between 1999 and 2008. It includes over 50 features representing patient and hospital outcomes. Information was extracted from the database for encounters that satisfied the following criteria.
 1. It is an inpatient encounter (a hospital admission).
 2. It is a diabetic encounter, that is, one during which any kind of diabetes was entered to the system as a diagnosis.
