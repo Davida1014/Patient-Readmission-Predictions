@@ -16,7 +16,9 @@ This dataset represents 101,000 hospital encounters of approximately 71,000 indi
 
 The data contains such attributes as patient number, race, gender, age, admission type, time in hospital, medical specialty of admitting physician, number of lab test performed, HbA1c test result, diagnosis, number of medication, diabetic medications, number of outpatient, inpatient, and emergency visits in the year before the hospitalization, etc. 
 
-Given a class imbalance of approximately 90%-to-10% between target variables, undersampling was performed and models were conducted on a dataset of 22,714 hospital encounters. Four classification models were performed to determine best fit: a decision tree, random forest, and XGBoost. Accuracy, precision, recall, and F1 scores were analyzed to determine the best-fit model, with an emphasis on accuracy and recall in an effort to minimize false predictions of no readmittance.
+Given a class imbalance of approximately 90%-to-10% between target variables, undersampling was performed and models were conducted on a dataset of 22,714 hospital encounters. Dataset suffers from lack of class separation, presenting a challenge for generating predictions.
+
+Three classification models were performed to determine best fit: a decision tree, random forest, and XGBoost. Accuracy, precision, recall, and F1 scores were analyzed to determine the best-fit model, with an emphasis on accuracy and recall in an effort to minimize false predictions of no readmittance.
 
 # Results
 Of the three models, the XGBoost model most accurately predicted readmission, as determined via accuracy and recall. Below are confusion matrices for each model, which evidence this. Its test scoring metrics are as follows:
