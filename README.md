@@ -18,10 +18,10 @@ Given a class imbalance of approximately 90%-to-10% between target variables, un
 
 # Results
 Of the four models, the XGBoost model most accurately predicted readmission, as determined via accuracy and recall. Below are confusion matrices for each model, which evidence this. Its test scoring metrics are as follows:
-Accuracy: 61.90%
-Recall: 60.16%
-Precision: 62.71%
-F1: 61.4%
+1. Accuracy: 61.90%
+2. Recall: 60.16%
+3. Precision: 62.71%
+4. F1: 61.4%
 
 [INSERT ALL MODEL CONFUSION MATRICES]
 
