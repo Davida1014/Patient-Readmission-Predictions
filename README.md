@@ -1,7 +1,7 @@
 # Patient Readmission Predictions
 ![istockphoto-932038072-612x612](https://github.com/Davida1014/Patient-Readmission-Predictions/blob/master/Images/istockphoto-932038072-612x612.jpg?raw=true)
 
-Elliot Macy and Davida Rosenstrauch
+Elliot Macy, Davida Rosenstrauch
 
 # Overview, Business Problem
 This project seeks to create a model that classifies whether a diabetes patient in a given hospital encounter is likely to be readmitted to the hospital within 30 days of discharge. This information will help insurance companies determine individual patients' risk of returning in the hospital in this time period.
