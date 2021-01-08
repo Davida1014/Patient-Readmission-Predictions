@@ -32,12 +32,15 @@ Of the three models, the XGBoost model most accurately predicted readmission, as
 Below are confusion matrices from each of the three models. As shown, the random forest and XGBoost models were significantly more accurate than the decision tree model. The XGBoost model was slighly more accurate than the random forest.
 
 Decision Tree:
+
 ![dt_confusion](https://github.com/Davida1014/Patient-Readmission-Predictions/blob/master/Images/dt_confusion.png?raw=true)
 
 Random Forest:
+
 ![rf_confusion](https://github.com/Davida1014/Patient-Readmission-Predictions/blob/master/Images/rf_confusion.png?raw=true)
 
 XGBoost:
+
 ![xgb_confusion](https://github.com/Davida1014/Patient-Readmission-Predictions/blob/master/Images/xgb_confusion.png?raw=true)
 
 
